@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-login{
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   background-image: url(../images/fondo-inicio.jpg);
+   width: 100%;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.container-login:before{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bodyLogin{
+    border: darkorange 3px solid ;
+    width: 540px;
+    height: 420px;
+    background: white;
+    padding: 0 0;
+    overflow: hidden;
+    overflow-y:auto ;
+    z-index: 1;
+}
+#login{
+    position: relative;
+}
+#login > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 44px;
+    width: 100%;
+}
+.divLogo{
+    display: flex;
+    justify-content: center;
+    padding-top:5px;
+}
+.logLogin{
+    width: 110px;
+    margin-bottom: 20px;
+    
+}
+.containerLayaut{
+    position: relative;
+}
+.containerLayaut > div{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0 44px;
+    width: 100%;
+    transition: all .4s;
+}
+h2 {
+    color: #1b1b1b;
+    font-family:Arial;
+    font-size: 17pt;
+    margin-bottom: 10px;
+}
+p{
+    font-family: Arial;
+    color: #1b1b1b;
+    font-size: 10pt;
+}
+input[type="email"],[type="password"],[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .6);
+    outline: none;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+a{
+  font-size: 10pt;
+  text-decoration: none;  
+  font-family: 'Arials';
+  color: darkorange;
+}
+a:hover{
+    text-decoration: underline;
+    color: darkorange;
+}
+.divboton{
+    display:flex;
+    justify-content: flex-end;
+}
+.divBotonLogin{
+    margin-top: 20px;
+    margin-left: 250px;
+}
+.btnFormLogin{
+    color: black;
+    cursor: pointer;
+    border: 0;
+    background:darkorange;
+    padding: 8px 20px;
+    font-size: 11pt;
+    letter-spacing: 1px;
+}
+.divEmailUser{
+    display: block;
+    margin-bottom: 10px ;
+}
+#btnPrev{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#btnPrev i{
+    color: lightgray;
+}
+#btnPrev:hover{
+    color:gray;
+}
+#spanEmail{
+    font-size: 12pt;
+}
+label{
+    color: 1b1b1b;
+    font-family: 'Arial';
+    font-size: 10pt;
+    display: block;
+    
+}
+.btnNext{
+    
+    margin-left: 290px;
+}
+.divBtnAction{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.divBtnAction button{
+    width: 49%;
+}
+.opacity0{
+    opacity: 0;
+}
+.opacity1{
+    opacity: 1;
+    transition: opacity .6s ;
+}
+.layoutActvie{
+    left: 0 !important;
+}
+.layoutLeft{
+    left: -100% !important;
+}
+.layoutRight{
+    left: 100% !important;
+}
+header .xd{
+    position: relative;
+    align-items: left;
+    z-index: 2;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+};
