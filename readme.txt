@@ -1,0 +1,2 @@
+Tienda-de-mascotas
+desarrollo de la primera fase del proyecto semestral para PGY3121-011V se diseño un pmv responsivo en donde se abordan las necesidades del Caso A se utilizo flexbox, bootstrap, media query y scripts integrantes del grupo : -Gonzalo Cabargas -Matías Parra -Nicolás Sotelo
