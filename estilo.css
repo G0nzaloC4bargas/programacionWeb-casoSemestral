@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+}
+body{   
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+
+
+main>.container{
+    padding: 30px 0;
+}
+
+#paypal-button-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+#titulo-donacion{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0,5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    color: white;
+    background-color: rgb(255, 166, 0);
+}
+
+#fondo-donacion{
+    background-image: url("images/fondo-inicio.jpg");
+}
+
+#btn-donacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0,5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    color: white;
+    background-color: rgb(255, 166, 0);
+}
+
+button:hover{
+    background-color: rgb(255, 210, 29);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-quienes-somos{color :orange;}
+
+
+
+header{
+    background-color: rgb(245, 245, 245);
+    
+    
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    font-size: 3em;
+
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("images/fondo-inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(255, 238, 0);
+}
+#hero button{
+    font-size: 1.75em;
+}
+
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 200px 12px;
+    background-color: rgb(255, 255, 73);
+}
+
+/*nuestros servicios*/
+#servicios {
+    background-color: rgb(192, 47, 168);
+    color: yellow;
+    text-align: center;
+}
+#servicios .container{
+    padding: 150px 12px;
+}
+#servicios h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#servicios p{
+    display: none;
+}
+
+#servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("images/fondo-inicio.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("images/fondo-inicio.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("images/fondo-inicio.jpg");
+}
+
+
+/*CARACTERISTICAS*/
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+/*FINAL DE PAGINA*/
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 5vw;
+}
+#final button{
+    font-size: 3vw;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 25px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#btn-carrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh
+}
+
+/*LOGIN*/
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*ADAPTACION PAGINA ESCRITORIO UTILIZAMOS MEDIA QUERY*/
+@media (min-width: 720px){
+    
+
+    header{
+        position: fixed;
+        width: 100vw;
+        z-index: 200;
+    }
+    
+    #main-catalogo .container{
+        padding: 100px 0;
+        
+    }
+    #main-detalle .container{
+        padding: 100px 0;
+    }
+
+    .table-responsive{
+        padding: 100px 0;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #quienes-somos .container{
+        
+        padding: 200px 12px;
+        background-color: rgb(255, 255, 73);
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienes-somos .img-container{
+        background-image: url("images/fondo-inicio.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    }
+
+    
+
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+ 
+    .slide{
+        margin-top: 10px;
+    }
+    .slide img{
+        height: 65vh
+    }
+    
+
+    #servicios .opciones{
+        display: flex;
+        justify-content: center;
+    }
+
+    #servicios p{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #servicios h3{
+        margin-top: 0;
+    }
+
+    #servicios h2{
+        font-size: 4em;
+    }
+
+    #servicios .carta{
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("images/fondo-inicio.jpg");
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("images/fondo-inicio.jpg");
+    }
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("images/fondo-inicio.jpg");
+    }
+
+
+    #caracteristicas ul {
+        margin:0;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+    .login{
+        padding-top: 200px;
+    }
+}
+
+
+

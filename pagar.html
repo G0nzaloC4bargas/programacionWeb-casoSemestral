@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DONACION</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AYGqb2K8RyNldLAwD2NMCmnJMc9bQHaNgyDuQ_yoEjy8ek6wrkmnAOEwzv6_E9YveUNGxRoTwNN9SJze&currency=USD"></script>
+</head>
+<body id="fondo-donacion">
+
+    <h1 id="titulo-donacion">ELIJA UN METODO DE PAGO</h1>
+    <div id="paypal-button-container">
+        <script>
+            paypal.Buttons({
+                style:{
+                    shape: 'pill',
+                }
+            }).render('#paypal-button-container');
+        </script>
+    </div>
+    <div id="btn-donacion">
+        <a href="carrito.html"><button>VOLVER</button></a>
+    </div> 
+</body>
+</html>
