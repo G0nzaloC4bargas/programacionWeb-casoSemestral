@@ -106,7 +106,10 @@ header a:hover{
     color: blueviolet;
 }
 
-#hero{
+/*BIENVENIDO A LA PAGINA*/
+
+
+.clase-carrusel{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,10 +126,10 @@ header a:hover{
     background-position: center center;
 }
 
-#hero h1{
+.clase-carrusel h1{
     color: rgb(255, 238, 0);
 }
-#hero button{
+.clase-carrusel button{
     font-size: 1.75em;
 }
 
@@ -138,6 +141,8 @@ header a:hover{
 }
 
 /*nuestros servicios*/
+
+
 #servicios {
     background-color: rgb(192, 47, 168);
     color: yellow;
@@ -162,6 +167,7 @@ header a:hover{
     margin: 30px;
     border-radius: 15px;
 }
+
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
@@ -169,6 +175,7 @@ header a:hover{
         rgba(0,0,0,0.5)
     ),url("images/fondo-inicio.jpg");
 }
+
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
@@ -289,7 +296,7 @@ footer .container{
         padding-right: 20px;
     }
 
-    #hero h1{
+    .clase-carrusel h1{
         font-size: 5em;
     }
 
