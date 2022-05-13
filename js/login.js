@@ -191,3 +191,47 @@ document.querySelector('#btnLogin').onclick = function(){
         alert("Usuario: "+strEmailUser+" Contraseña: "+strPassUser)
     }
 }
+//validacion contraseñas
+function validarPass(pass){
+    const StrPass = new RegExp(/^.{4,12}$/);
+    if (StrPass.test(pass)== false){
+        return false;
+    }else{
+        return true;
+    }
+}
+//Valida que la contraseña tenga de 4 a 12 caracteres
+document.querySelector('#passNewUser').onkeyup = function(){
+    const pass = document.querySelector('#passNewUser').value;
+    const alertaRegistro= document.querySelector('#alertRegister');
+    const valPass = validarPass(pass)
+    if(!valPass){
+        alertaRegistro.innerHTML = '<p style="color:red;">La contraseña debe contener de 4 a 12 caracteres</p>';
+        alertaRegistro.style.display = "block"
+    }else{
+        alertaRegistro.style.display = "none"
+    }
+
+}
+//comparador de contraseñas
+function validarPass2(pass1,pass2){
+    if(pass2 == pass1){
+        return true;
+    }else{
+        return false;
+    }
+}
+//Valida que las dos contraseñas sean iguales  
+
+document.querySelector('#passNewUser2').onkeyup = function(){
+    const pass1 = document.querySelector('#passNewUser').value;
+    const pass2 = document.querySelector('#passNewUser2').value ;
+    const validpass = validarPass2(pass1,pass2)
+    const alertRegister =document.querySelector('#alertRegister');
+    if(validpass){
+        alertRegister.style.display = "none"
+    }else{
+        alertRegister.innerHTML = '<p style="color:red;">Las contraseñas deben ser identicas</p>';
+        alertRegister.style.display = "block"
+    }
+}
